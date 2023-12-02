@@ -1,13 +1,86 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login</title>
-</head>
-<body>
-  
-</body>
-</html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal</title>
+    <script
+      src="https://kit.fontawesome.com/d80a8d136c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="todo-container">
+      <h2>Minha Lista de To Do’s</h2>
+      <form id="editTodoForm">
+        <h3 id="formTitle">Criar um Todo</h3>
+        <label for="editTodoTitle">Título:
+            <input type="text" id="editTodoTitle" name="editTodoTitle" />
+        </label>
+
+        <!DOCTYPE html>
+        <html lang="pt-br">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Página Principal</title>
+            <script
+              src="https://kit.fontawesome.com/d80a8d136c.js"
+              crossorigin="anonymous"
+            ></script>
+            <script
+              type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/toastify-js"
+            ></script>
+            <link
+              rel="stylesheet"
+              type="text/css"
+              href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+            />
+            <link rel="stylesheet" href="styles.css" />
+          </head>
+          <body>
+            <div class="todo-container">
+              <h2>Minha Lista de To Do’s</h2>
+              <form id="editTodoForm">
+                <h3 id="formTitle">Criar um Todo</h3>
+                <label for="editTodoTitle">Título:
+                    <input type="text" id="editTodoTitle" name="editTodoTitle" />
+                </label>
+        
+                <label for="editTodoDescription">Descrição:
+                    <input
+                      type="text"
+                      id="editTodoDescription"
+                      name="editTodoDescription"
+                    />
+                </label>
+        
+                <label style="display: none;" id="editTodoStatus">Realizado:
+                    <input type="checkbox" id="editTodoStatusCheckbox" name="editTodoStatus" />
+                </label>
+                <div class="btns">
+                    <button style="display: none;" type="button" id="deleteEditedTodo">
+                        <i class="fas fa-trash-alt"></i> Apagar
+                    </button>
+                    <button type="button" id="saveEditedTodo">
+                        <i class="fas fa-save"></i> Salvar
+                    </button>
+                </div>
+              </form>
+              <ul id="todoList"></ul>
+            </div>
+            <script src="main.js"></script>
+          </body>
+        </html>
 
